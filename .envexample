@@ -1,0 +1,23 @@
+# ── RestaurantOS Environment Variables ───────────────────────────────────────
+#
+# SETUP:
+#   cp .env.example .env.local
+#   Fill in your values below
+#   Never commit .env.local to git
+#
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Admin Account (Super Admin — cannot be removed from the app) ──────────────
+# Change these to your own details when forking
+REACT_APP_ADMIN_NAME=Your Name Here
+REACT_APP_ADMIN_EMAIL=admin@youremail.com
+REACT_APP_ADMIN_PASSWORD=your_secure_password
+
+# ── Firebase (required for Google Sign-In) ────────────────────────────────────
+# Get from: console.firebase.google.com → Your Project → Project Settings → Web App
+REACT_APP_FIREBASE_API_KEY=your_api_key_here
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id_here
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id_here
+REACT_APP_FIREBASE_APP_ID=your_app_id_here

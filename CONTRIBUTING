@@ -1,0 +1,104 @@
+# Contributing to RestaurantOS
+
+Thank you for your interest in contributing! 🎉  
+RestaurantOS is open source and welcomes contributions from everyone.
+
+---
+
+## 🛠 Getting Started
+
+### 1. Fork & Clone
+```bash
+git clone https://github.com/YOUR_USERNAME/restaurant-ms.git
+cd restaurant-ms
+npm install
+```
+
+### 2. Set up Firebase (for Google Sign-In)
+```bash
+cp .env.example .env.local
+# Fill in your Firebase credentials in .env.local
+```
+
+### 3. Run locally
+```bash
+npm start
+# Opens at http://localhost:3000
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── firebase.js              # Firebase config & Google auth
+├── context/AppContext.jsx   # Global state + localStorage
+├── pages/
+│   ├── AuthPage.jsx         # Login (Google + email/password)
+│   ├── Dashboard.jsx        # Stats & charts
+│   ├── POS.jsx              # Point of sale + print
+│   ├── Tables.jsx           # Table management
+│   ├── Kitchen.jsx          # Kitchen display system
+│   ├── Menu.jsx             # Menu CRUD
+│   ├── Reports.jsx          # Reports with print
+│   ├── Staff.jsx            # Staff & role management
+│   └── Misc.jsx             # Inventory, Expenses, Reservations, Settings
+├── components/
+│   ├── Sidebar.jsx          # Navigation
+│   └── Notifications.jsx    # Toast system
+└── styles/global.css        # Design system
+```
+
+---
+
+## 🤝 How to Contribute
+
+### Reporting Bugs
+- Open an issue with the bug label
+- Include steps to reproduce, expected vs actual behavior
+- Screenshots help!
+
+### Suggesting Features
+- Open an issue with the enhancement label
+- Describe the use case and why it would help restaurant owners
+
+### Submitting a Pull Request
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/your-feature-name`
+3. Make your changes
+4. Test locally with `npm start`
+5. Build to verify: `npm run build`
+6. Push and open a Pull Request
+
+---
+
+## 💡 Ideas for Contributions
+
+- [ ] Dark/light theme toggle
+- [ ] Multi-language support (Hindi, Marathi, etc.)
+- [ ] Firebase Firestore for multi-device data sync
+- [ ] Customer-facing QR menu page
+- [ ] WhatsApp/SMS order notifications
+- [ ] Staff attendance & shift tracking
+- [ ] Customer loyalty/points system
+- [ ] Discount & coupon system
+- [ ] Split bill feature
+- [ ] Export reports to PDF/Excel
+- [ ] Mobile app (React Native)
+
+---
+
+## 📋 Code Style
+
+- Use functional React components with hooks
+- Keep components focused — one page per file
+- Use CSS variables from `global.css` for colors
+- All data persistence via `localStorage` (for now)
+- Keep the dark theme consistent
+
+---
+
+## 📄 License
+
+By contributing, you agree that your contributions will be licensed under the MIT License.
